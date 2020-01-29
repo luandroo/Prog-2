@@ -1,0 +1,50 @@
+#carrinho {
+	width: 90%;
+	margin: 0 auto; /* centraliza em relação ao elemento pai */
+	border-collapse: collapse;
+}
+#carrinho tr{
+	border-bottom: 1px solid gray;
+}
+#carrinho tr:nth-child(even){
+	background-color: #eee; /* linhas pares */
+}
+#carrinho tr:nth-child(odd){
+	background-color: #fff; /* linhas ímpares */
+}
+#carrinho tr th {
+	background-color: pink;
+	padding: 5px 10px;
+}
+#carrinho td {
+	padding: 5px 10px;
+}
+#carrinho tr th:nth-child(1) { /* 1a coluna */
+	width: 60%;
+}
+tr.linhaFinal{
+	background-color: cornsilk !important; /* !important é uma maneira de forçar a aplicação de uma regra (esta regra estava sendo sobrescrita pela regra do par/impar) */
+	color: MediumBlue;
+	text-align: right;
+}
+tr.linhaFinal .celulaValor{
+	font-weight: bold;
+}
+#carrinho tr td:nth-child(5) {
+	text-align: right;
+	font-weight: bolder;
+	color: red;
+}
+#carrinho input{
+	width: 50px;
+	margin: 0 auto;
+}
+.celulaValor{
+	text-align: center;
+}
+.botoes{
+	margin-top: 10px;
+	text-align: right;
+	height: 30px;
+	width: 90%;
+}

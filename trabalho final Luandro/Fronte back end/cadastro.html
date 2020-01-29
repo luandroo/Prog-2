@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>RosterItali Hoteis</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="shortcut icon" type="image/x-icon" href="imagens/logo4.png">
+	<link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Akronim" rel="stylesheet">
+
+	
+</head>
+<body>
+	<header>
+		<div class="cabecalho">
+			<img src="imagens/logo4.png" class="imag" alt="logo-marca do servidor">
+			<h1 id="nomehotel">HOSTERITALI</h1>
+		</div>
+	</header>
+
+
+	<div class="principal">
+		<section class="col-1">
+
+			<p id="mm">☰ MENU</p>
+			
+			<section class="caixa">
+				<nav class="menu">
+					<ul>
+						<li><a href="index.html"> Página inicial</a></li>
+						<li><a href="quartos.html"> Quartos</a></li>
+						<li><a href="locacao.html"> Locação</a></li>
+						<li><a href="contato.html"> Contato</a></li>
+					</ul>
+				</nav>
+			</section>
+		</section>
+
+		<section class="col-2">
+			<h2>Cadastro</h2>
+			<br>
+			<form action="cadastro.php" method="post" id="form-validaloc">
+				<!-- dentro do form é salvo os dados para ir para o servidor -->
+				<div class="form-item">
+					<label for="nome" class="rotulo">Nome:</label>
+					<input type="text" name="nome" size="30" id="nome">
+					<span class="msg-erro" id="msg-nome"></span>
+				</div>
+				<div class="form-item">
+					<label for="email" class="rotulo">E-mail:</label>
+					<input type="email" name="email" size="50" maxlength="50" id="email">
+					<span class="msg-erro" id="msg-email"></span>
+				</div>
+				<div class="form-item">
+					<label for="senha" class="rotulo">Senha:</label>
+					<input type="password" name="senha" size="50" maxlength="50" id="senha">
+					<span class="msg-erro" id="msg-senha"></span>
+				</div>
+				<div class="form-item">
+					<label for="senha2" class="rotulo">Repetir Senha:</label>
+					<input type="password" name="senha2" size="50" maxlength="50" id="senha2">
+					<span class="msg-erro" id="msg-senha2"></span>
+				</div>
+				<div class="form-item">
+					<label for="fone" class="rotulo">Telefone:</label>
+					<input type="tel" name="fone" id="fone" size="10" maxlength="10">
+					<span class="msg-erro" id="msg-fone"></span>
+				</div>
+				<div class="form-item">
+					<label for="cpf" class="rotulo">CPF:</label>
+					<input type="text" id="cpf" name="cpf" required="required" pattern="[0-9]+$" maxlength="11" size="11">
+					<span class="msg-erro" id="msg-cpf"></span>
+				</div>
+				<div class="form-item">
+					<label for="rg" class="rotulo">RG:</label>
+					<input type="text" name="rg" id="rg" size="12" maxlength="12">
+					<span class="msg-erro" id="msg-rg"></span>
+				</div>
+				<div class="form-item">
+					<label for="ender" class="rotulo">Endereço:</label>
+					<input type="text" name="ender" size="50" maxlength="50" id="ender">
+					<span class="msg-erro" id="msg-ender"></span>
+				</div>
+				<div class="form-item">
+					<label class="label-alinhado"></label>
+					<label><input type="checkbox" id="concordo" name="concordo"> Li e concordo com os termos de uso</label>
+					<span class="msg-erro" id="msg-concordo"></span>
+				</div>	
+				
+				<div class="form-item">
+					<input type="submit" name="botao" value="Confirmar">
+					<input type="reset" name="reset" value="Limpar campos">
+				</div>
+				<br>
+			</form>
+
+		</section>
+
+		<br>
+	</div>
+	<footer>
+		<p id="hotel"><b>HosterItali Hotel</b></p>
+	</footer>
+	<script src="js/function.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/valida.js"></script>
+</body>
+</html>

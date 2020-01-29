@@ -1,0 +1,352 @@
+* {
+	box-sizing: border-box;
+}
+a{
+ 	text-decoration: none;
+}
+
+body {
+	font-family: "Playfair Display", serif;
+	margin: 8px;
+	text-align: justify;
+}
+
+/* formatações gerais */
+header{
+	background-color: #000d1a;
+	color: #ed8b21;
+	padding: 0px;
+	position: relative;
+}
+
+body header div input{
+	height :50px;
+	margin-bottom: 10px;
+	/*text-align: right;*/
+
+}
+#entra{
+	color: #ed8b21;
+	font-style: italic;
+	text-align: right;
+ }
+
+.col-1, .col-2, .col-3, .col-4 {
+	width: 100%;
+	padding: 15px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+
+footer {
+	background-color: #000d1a;
+	text-align: center;
+	color: #ed8b21;
+}
+.col-1{
+	background-color: #ed8b21;
+	color: white;
+	position: relative;
+}
+
+.col-1 a{
+	color: #000d1a;
+}
+
+.col-3{
+	text-align: center;
+}
+
+.menu a:hover{
+	color: white;
+}
+
+.menu ul li{
+	list-style-type: none;
+	margin: 1px;
+	margin-right: 10px;
+	margin-bottom: 3px;
+}
+
+.menu ul{
+	width: 100%;
+	float: left;
+	font-size: 1.25em;
+	text-align: center;
+	padding: 0;
+}
+
+#mm{
+	color:  #000d1a;
+}
+
+.cabecalho{
+	overflow: hidden;
+}
+
+h1{
+	font-family: "Merriweather", serif;
+}
+h2 {
+	color: #ed8b21;
+	font-family: "Source Sans Pro", cursive;
+	text-align: center;
+}
+footer{
+	padding: 20px;
+	clear: left;
+	font-family: "Merriweather", serif;
+}
+/*menu*/
+
+/*imagens de bloco transformar em flutuante*/
+
+/*Padronizar tamanho das figuras*/
+
+
+.col-2 img{
+	width: 100%;
+	padding: 15px;
+}
+
+.imag{/*inserir figura do brasao*/
+	width: 20%;
+	margin-left: 40%;
+	margin-top: 10px;
+
+}
+
+.imag2{
+	width: 100%;
+}
+/*Centralizar nome do hotel*/
+#nomehotel{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 3em;
+}
+
+.menu{
+	padding: 20px;
+	text-align: center;
+}
+
+
+
+div .quarto{
+	width: 100%;
+	padding: 15px;	
+	text-align: center;
+
+}
+
+div .logo-con{
+	text-align: center;
+}
+.borda{
+	margin-top: 15px; 
+    margin-right: 10px;
+    margin-bottom: 25px;
+    margin-left: 35px;
+}
+form div span{
+	font-family: "Just Another Hand", cursive;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	color: red; 
+	font-size: 1.5em;
+	font-style: italic;
+}
+
+
+/*autotransition*/
+#slideshow {
+  margin: 10px auto;
+  position: relative;
+  width: 100%;
+  padding: 30%;
+  
+}
+
+#slideshow  div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+.foto{
+	width: 100%;
+	height: 100%;
+}
+.form-item{
+	padding: 4px;
+}
+/*ajeitar os campo da senha e do usuario do login*/
+.campo{
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+}
+input[type="text"], select, input[type="senha"], input[type="nome"]{
+	border: 1px solid #ed8b21;
+	padding: 8px;
+	font-family: "Source Sans Pro", cursive;
+	border-radius: 30px;
+	color: #000d1a;
+	width: 100%;
+}
+.campo{
+			text-align: center;
+}
+
+
+/*ajustar/alinhar campos de inserção*/
+.rotulo{
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+}
+
+input[type="text"], select, input[type="tel"], input[type="email"], input[type="password"]{
+	border: 1px solid #ed8b21;
+	padding: 8px;
+	font-family: "Source Sans Pro", cursive;
+	border-radius: 30px;
+	color: #000d1a;
+	width: 100%;
+}
+
+input[type="date"], input[type="time"]{
+	border: 1px solid #ed8b21;
+	padding: 8px;
+	font-family: "Source Sans Pro", cursive;
+	border-radius: 30px;
+	text-align: center;
+	color: #000d1a;
+	width: 30%;	
+}
+
+input[type="submit"], input[type="reset"]{
+	font-family: "Just Another Hand", cursive;
+	background-color: #ed8b21;
+	color: #000d1a;
+	padding: 6px 20px;
+	border: none;
+	border-radius: 30px;
+	margin-top: 15px;
+	margin-right: 50px;
+	font-size: 1.2em;
+}
+
+/*destaca botões quando mause passa em cima*/
+input[type="submit"]:hover, input[type="reset"]:hover{
+	background-color: #000d1a;
+	color: white;
+	cursor: pointer;
+}
+
+form{
+	overflow: hidden;
+}
+
+form label{
+	font-family: "Just Another Hand", cursive;
+	margin-top: 15px;
+	font-size: 1.5em;
+	color: #000d1a;
+}
+ /*mobile first - celular*/
+    
+    /*tela de até 600px - tablet*/
+    @media only screen and (min-width: 600px){
+        .menu ul{
+			text-align: left;
+		} 
+
+    	footer {
+      		flex-direction: row;
+    	}      
+	}
+
+
+    @media only screen and (min-width: 1000px){
+
+
+    	 #mm{
+    		display: none;
+    	}
+    	.menu ul li{
+        	display: inline;
+        	padding: 12px;
+    	}
+    	.menu ul{
+			text-align: center;
+		}
+		#slideshow {
+			width: 85%;
+			padding: 20%;
+		}
+		#img1{
+			width: 100%;
+			height: 100%;
+		}
+		#img2{
+			width: 100%;
+			height: 100%;
+		}
+		#img3 {
+			width: 100%;
+			height: 100%;
+		}
+
+		.col-2 img{
+			width: 40%;
+			padding: 15px;
+
+		}
+
+		.form-item{
+			text-align: center;
+		}
+
+		.rotulo{
+			text-align: center;
+		}
+
+		input[type="text"], select, input[type="tel"], input[type="email"], input[type="password"]{
+			width: 70%;
+		}
+
+		input[type="date"], input[type="time"]{
+			width: 20%;	
+		}
+
+		input[type="submit"], input[type="reset"]{
+			margin-left: 60px;
+			font-size: 1.5em;
+		}
+
+		.imag{/*inserir figura do brasao*/
+			margin-left: 50px;
+			margin-top: 10px;
+
+		}
+
+		.cabecalho{
+			overflow: hidden;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			font-size: 1.5em;
+		}
+
+		.cabecalho h1{
+			float: left;
+			margin-left: 20%;
+			padding-top: 100px; 
+		}
+	
+    }

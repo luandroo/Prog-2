@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>RosterItali Hoteis</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="shortcut icon" type="image/x-icon" href="imagens/logo4.png">
+	<link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	
+</head>
+<body>
+	<header>
+		<div class="cabecalho">
+			<img src="imagens/logo4.png" class="imag" alt="logo-marca do servidor">
+			<h1 id="nomehotel">HOSTERITALI</h1>
+			<input type="submit" name="botao" onclick="location.href='entrar.html'" value="Login" >
+		</div>
+	</header>
+
+	<div class="principal">
+		<section class="col-1">
+
+			<p id="mm">☰ MENU</p>
+			
+			<section class="caixa">
+				<nav class="menu">
+					<ul>
+						<li><a href="index.html"> Página inicial</a></li>
+						<li><a href="quartos.html"> Quartos</a></li>
+						<li><a href="locacao.html"> Locação</a></li>
+						<li><a href="contato.html"> Contato</a></li>
+					</ul>
+				</nav>
+			</section>
+		</section>
+
+		<section class="col-2">
+			<form action="0" method="get">
+			<!-- dentro do form é salvo os dados para ir para o servidor -->
+				<div class="form-item">
+					<label for="quartos" class="rotulo">Quarto:</label>
+						<select name="quartos" id="quartos">
+							<option value="0" selected>Selecione</option> <!-- Marcado por padrão -->
+							<option value="1">Quarto 1</option>
+							<option value="2">Quarto 2</option>
+							<option value="3">Quarto 3</option>
+							<option value="4">Quarto 4</option>
+							<option value="5">Quarto 5</option>
+							<option value="6">Quarto 6</option>
+							<option value="7">Quarto 7</option>
+							<option value="8">Quarto 8</option>
+							<option value="9">Quarto 9</option>
+							<option value="10">Quarto 10</option>
+							<option value="11">Quarto 11</option>
+							<option value="12">Quarto 12</option>
+						</select>
+				</div>
+				<div class="form-item">
+					<label for="datain" class="rotulo">Entrada:</label>
+					<input type="date" name="datein">
+				</div>
+				<div class="form-item">
+					<label for="horain" class="rotulo">Horário:</label>
+					<input type="time">
+				</div>
+				<div class="form-item">
+					<label for="dataout" class="rotulo">Saída:</label>
+					<input type="date" name="dateout">
+				</div>
+				<div class="form-item">
+					<label for="horaout" class="rotulo">Horário:</label>
+					<input type="time">
+				</div>
+				<div class="form-item">
+					<label for="cpf" class="rotulo">CPF:</label>
+					<input type="text" name="cpf" id="fone" size="11" maxlength="11">
+				</div>
+				<div class="form-item">
+					<input type="submit" name="botao" value="Confirmar">
+					<input type="reset" name="reset" value="Limpar campos">
+				</div>
+				<br>
+
+			</form>
+
+		</section>
+		<br>
+	</div>
+	<footer>
+		<p id="hotel">HosterItali Hotel</p>
+	</footer>
+	<script src="js/function.js"></script>
+	<script src="js/menu.js"></script>
+</body>
+</html>

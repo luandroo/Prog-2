@@ -1,0 +1,118 @@
+insert into quartos
+	( Andar, Tipo, Numero, imagem) 
+	values 
+	( 2,'suite', 00202, '1.jpg');
+insert into quartos
+	( Andar, Tipo, Numero, imagem)  
+	values 
+	( 2,'suite', 00203,'2.jpg');
+insert into quartos
+	( Andar, Tipo, Numero, imagem) 
+	values 
+	( 2,'quarto de casal', 00204, '3.jpg');
+insert into quartos
+	( Andar, Tipo, Numero, imagem)  
+	values 
+	( 2,'suite', 00205, '4.jpg');
+insert into quartos
+	( Andar, Tipo, Numero, imagem)  
+	values 
+	( 2 ,'quarto solteiro duplo', 00206, '5.jpg');
+insert into quartos
+	( Andar, Tipo, Numero, imagem)  
+	values 
+	( 2 ,'quarto solteiro duplo', 00207, '6.jpg');
+insert into quartos
+	( Andar, Tipo, Numero, imagem)  
+	values 
+	( 2,'quarto de casal', 00208, '7.jpg');
+insert into quartos
+	( Andar, Tipo, Numero, imagem)  
+	values 
+	( 3,'quarto de casal', 00301, '8.jpg');
+insert into quartos
+	( Andar, Tipo, Numero, imagem)  
+	values 
+	( 3,'quarto de casal', 00302, '9.jpg');
+insert into quartos
+	( Andar, Tipo, Numero, imagem)  
+	values 
+	( 3,'quarto solteiro duplo', 00303, '10.jpg');
+insert into quartos
+	( Andar, Tipo, Numero, imagem)  
+	values 
+	( 3,'quarto solteiro duplo',00304 , '11.jpg');
+insert into quartos
+	( Andar, Tipo, Numero, imagem)  
+	values 
+	( 3,'suite', 00305, '12.jpg');
+
+
+
+insert into hotel 
+	(Cidade, Sigla, Avaliacao, Nota) 
+	values 
+	('Chapecó','ITLY','funcionarios muito simpaticos e bem treinados,os quartos sao amplos e aconchegantes,com boa acustica,possibilitando descansar.', 9);
+	
+
+
+
+insert into cliente 
+	(Nome, RG, CPF, Endereco, Telefone, email, Data_nascimento, senha) 
+	values 
+	('vanessa machado',5000222 ,1111111 ,'getulio vargas 300 d', 99043523,'vanessa@gmail.com','1960-11-20',111111);
+insert into cliente 
+	(Nome, RG, CPF, Endereco, Telefone, email, Data_nascimento, senha) 
+	values 
+	('ana terra',5000333 ,2222222 ,'nereu ramos 300 e',91346234 ,'anaterra@live.com','1961-12-10',222222);
+insert into cliente 
+	(Nome, RG, CPF, Endereco, Telefone, email, Data_nascimento, senha) 
+	values 
+	('pedro almeida',6435531 ,3333333 ,'leopoldo sander 234 e',98345643 ,'pedroalmeida@gmail.com','1987-10-30',444444);
+insert into cliente 
+	(Nome, RG, CPF, Endereco, Telefone, email, Data_nascimento, senha) 
+	values 
+	('valentina cedro',6543344 ,4444444 ,'porto alegre 440 e',88562345 ,'valentina@gmail.com','1995-11-16',333333);
+insert into cliente 
+	(Nome, RG, CPF, Endereco, Telefone, email, Data_nascimento, senha) 
+	values 
+	('maria eduarda ferreira',7903432 ,8888888 ,'uruguai 476 d',99684376 ,'mariaferreira@gmail.com','1998-12-28',555555);
+
+
+
+
+insert into cliente_quarto 
+	(data_entrada, data_saida, Qtd_ocupamtes, Avaliacao, hora_entrada, hora_saida, fk_Quartos_Identificador, fk_Cliente_CPF, cod_pagamento)
+	values 
+	('2019/04/20','2019/04/22',2 ,'hotel moderno e confortavel, tudo muito limpo e organizado.','07:15','20:00', 1, 1111111, 1);
+insert into cliente_quarto 
+	(data_entrada, data_saida, Qtd_ocupamtes, Avaliacao, hora_entrada, hora_saida, fk_Quartos_Identificador, fk_Cliente_CPF, cod_pagamento)
+	values
+	('2019/04/21','2019/04/24',1 ,'hotel com boa estrutura, recepçao organizada e rapida,tudo muito limpo.','09:14','22:30', 2, 2222222, 2);
+insert into cliente_quarto 
+	(data_entrada, data_saida, Qtd_ocupamtes, Avaliacao, hora_entrada, hora_saida, fk_Quartos_Identificador, fk_Cliente_CPF, cod_pagamento)
+	values 
+	('2019/06/02','2019/07/08', 2,'quarto com bom tamanho, elevador com controle de acesso,otimo custo beneficio no restaurante','06:45','19:34', 3, 3333333, 3);
+insert into cliente_quarto 
+	(data_entrada, data_saida, Qtd_ocupamtes, Avaliacao, hora_entrada, hora_saida, fk_Quartos_Identificador, fk_Cliente_CPF, cod_pagamento)
+	values 
+	('2019/06/26','2019/07/02', 2,'hotel com otima localizaçao, aconchegante seja a lazer ou a trabalho, bom atendimento.','09:02','20:48', 4, 1111111, 4);
+insert into cliente_quarto 
+	(data_entrada, data_saida, Qtd_ocupamtes, Avaliacao, hora_entrada, hora_saida, fk_Quartos_Identificador, fk_Cliente_CPF, cod_pagamento)
+	values 
+	('2019/06/26','2019/07/02', 2,'hotel com otima localizaçao, aconchegante, bom atendimento.','19:02','8:40', 10, 4444444, 5);
+
+
+
+insert into pagamento
+	(Forma_pagamento, valor, cod, Data, hora, fk_cliente_quarto_cod_pagamento)
+	values
+	('boleto', 130, 2, '2019/05/07', '11:12', 2);
+insert into pagamento
+	(Forma_pagamento, valor, cod, Data, hora, fk_cliente_quarto_cod_pagamento)
+	values
+	('a vista', 135, 3, '2019/05/07', '9:15', 3);
+insert into pagamento
+	(Forma_pagamento, valor, cod, Data, hora, fk_cliente_quarto_cod_pagamento)
+	values
+	('dinheiro', 150, 4, '2019/05/09', '20:30', 4);

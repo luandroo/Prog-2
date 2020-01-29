@@ -1,0 +1,1 @@
+INSERT INTO cliente (nome, email, endereco, bairro, login, senha) VALUES ('Andressa Sebben', 'as@gmail.com', 'Rua xyz', 'Centro', 'asebben', md5("12345"));
